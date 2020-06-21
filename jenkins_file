@@ -1,6 +1,5 @@
 job("Groovy 1"){
   description("This is first job of groovy project")
-	wipeOutWorkspace()
 	scm {
 		github("onkar2701/onkar2701/groovy-task.git","master")
 	}
