@@ -43,7 +43,7 @@ job("Groovy 2"){
 		sudo kubectl delete all --all
 		sudo kubectl run html-pod --image=httpd
 		sleep 30
-		sudo kubectl cp *  html-pod:/usr/local/apache2/htdocs
+		sudo kubectl cp *.html  html-pod:/usr/local/apache2/htdocs
 		sudo kubectl expose pods html-pod --type=NodePort --port=80
 		fi
 		elif ls| grep .php
