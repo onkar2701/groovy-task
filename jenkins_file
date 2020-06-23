@@ -64,7 +64,7 @@ job("Groovy 3")
     }
 	 steps {
         shell('''
-	if sudo kubectl get pods | grep -pod
+	if sudo kubectl get pods | grep pod
 	then
 	echo " Website is working properly!!"
 	else
