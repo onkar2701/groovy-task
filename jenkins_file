@@ -68,7 +68,7 @@ job("Groovy 3")
 	then
 	echo " Website is working properly!!"
 	else
-	cd /root/code
+	cd code
 	python3 test_mail.py
 	fi
 	''')
