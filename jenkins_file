@@ -3,6 +3,13 @@ job("Groovy 1"){
 	scm {
 		github("onkar2701/groovy-task","master")
 	}
+	scm {
+     		git {
+       			extensions {
+         			wipeWorkspace()
+       				   }
+     			}
+   		}
 	triggers {
 		scm("* * * * *")
 	}
