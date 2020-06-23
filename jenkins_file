@@ -1,15 +1,8 @@
 job("Groovy 1"){
   description("This is first job of groovy project")
-	git {
-       			extensions {
-         			wipeWorkspace()
-       				   }
-     			}
-   		}
 	scm {
-		github('onkar2701/groovy-task.git','master')
+		github('onkar2701/groovy-task','master')
 	}
-	scm {
      		
 	triggers {
 		scm("* * * * *")
